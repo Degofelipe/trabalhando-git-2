@@ -8,7 +8,20 @@
 </head>
 
 <body>
+    <script>
+        function calculaMedia(notas) {
+            let somaNotas = 0
+            for (let nota of notas) {
+                somaNotas += nota
+            }
 
+            return somaNotas / notas.length
+        }
+
+        let notas = cadastraNotas()
+        let media = calculaMedia(notas)
+
+    </script>
 </body>
 
 </html>
