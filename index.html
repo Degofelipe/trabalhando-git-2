@@ -8,8 +8,20 @@
 </head>
 
 <body>
-<script>
-    function cadastraNotas() {
+    <script>
+        function calculaMedia(notas) {
+            let somaNotas = 0
+            for (let nota of notas) {
+                somaNotas += nota
+            }
+
+            return somaNotas / notas.length
+        }
+
+        let notas = cadastraNotas()
+        let media = calculaMedia(notas)
+
+       function cadastraNotas() {
             let notas = []
 
             let quantidade = +prompt("Digite a quantidade de notas")
